@@ -1,0 +1,19 @@
+@import 'colors';
+@import 'variables';
+@import 'vendor';
+
+body {
+  font-family: $standard-browser-fonts;
+  font-size: $standard-font-size;
+  color: #FFF;
+}
+
+a {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

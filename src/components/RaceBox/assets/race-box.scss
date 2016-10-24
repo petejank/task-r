@@ -1,0 +1,9 @@
+@import 'src/assets/styles/colors';
+
+.race-box {
+  width: 240px;
+  background: $gray-dark;
+  border-radius: 3px;
+  margin: 0 auto;
+  overflow: hidden;
+}

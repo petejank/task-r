@@ -1,0 +1,69 @@
+@import 'src/assets/styles/colors';
+
+.race-box-list-entry {
+  color: $gray-dark-1;
+  display: table;
+  width: 100%;
+
+  &:last-child {
+    /* A bit of BEM rules breaking */
+    .race-box-list-entry__silk, .race-box-list-entry__name, .race-box-list-entry__odds {
+      border-bottom: 0;
+    }
+  }
+
+  @at-root {
+    .race-box-list-entry__silk {
+      display: table-cell;
+      width: 24px;
+      height: 39px;
+      padding-left: 8px;
+      border-bottom: 1px solid $gray-1;
+      vertical-align: middle;
+      box-sizing: border-box;
+    }
+
+    .race-box-list-entry__name {
+      display: table-cell;
+      padding: 4px;
+      height: 39px;
+      width: 166px;
+      border-bottom: 1px solid $gray-1;
+      word-break: break-all;
+      vertical-align: middle;
+      line-height: 125%;
+      box-sizing: border-box;
+    }
+
+    .race-box-list-entry__odds {
+      display: table-cell;
+      text-align: right;
+      padding-right: 8px;
+      width: 42px;
+      border-bottom: 1px solid $gray-1;
+      vertical-align: middle;
+      height: 39px;
+      box-sizing: border-box;
+    }
+
+    .race-box-list-entry__odds-link {
+      display: inline-block;
+      text-decoration: none;
+      width: 32px;
+      height: 18px;
+      line-height: 18px;
+      border-radius: 3px;
+      border: 1px solid $yellow;
+      color: $gray-dark-1;
+      text-align: center;
+      background-image: linear-gradient(#ffdd86, #f8ae17);
+      background-color: #ffdd86;
+
+      &:hover {
+        border-color: $yellow-dark;
+        background-image: linear-gradient($yellow-light, $yellow-dark);
+        background-color: $yellow-light;
+      }
+    }
+  }
+}

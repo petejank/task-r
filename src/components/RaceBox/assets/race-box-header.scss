@@ -1,0 +1,29 @@
+@import 'src/assets/styles/colors';
+@import 'src/assets/styles/variables';
+
+.race-box-header {
+  line-height: 37px;
+  margin: 0 8px;
+  border-bottom: 1px solid $gray;
+  overflow: hidden;
+  font-size: $standard-font-size;
+
+  @at-root {
+    .race-box-header__flag {
+      float: left;
+      margin-right: 6px;
+      margin-top: -1px;
+      vertical-align: middle;
+    }
+
+    .race-box-header__name {
+      font-weight: bold;
+      float: left;
+    }
+
+    .race-box-header__time {
+      font-weight: bold;
+      float: right;
+    }
+  }
+}

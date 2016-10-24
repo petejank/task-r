@@ -1,0 +1,8 @@
+@import '~Silk.scss';
+
+@include sprites($spritesheet-sprites);
+
+[class^="Silk"] {
+  display: inline-block;
+  vertical-align: middle;
+}

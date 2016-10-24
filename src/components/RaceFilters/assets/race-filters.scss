@@ -1,0 +1,12 @@
+@import 'src/assets/styles/colors';
+@import 'src/assets/styles/variables';
+
+.race-filters {
+  width: 240px;
+  background: $gray-dark;
+  border-radius: 3px;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  padding: 8px;
+  box-sizing: border-box;
+}

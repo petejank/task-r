@@ -1,0 +1,55 @@
+.race-type {
+  width: 27px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-size: 27px 16.2px;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: 27px 16px;
+
+  @at-root {
+    $raceTypePrefix: 'race-type-';
+
+    .race-type--large {
+      width: 30px;
+      height: 18px;
+      background-size: 30px 18px;
+    }
+
+    .race-type--disabled {
+      opacity: 0.5;
+    }
+
+    .race-type--D {
+      background-image: url($raceTypePrefix + 'D.svg');
+    }
+
+    .race-type--G {
+      background-image: url($raceTypePrefix + 'G.svg');
+    }
+
+    .race-type--J {
+      background-image: url($raceTypePrefix + 'J.svg');
+    }
+
+    .race-type--T {
+      background-image: url($raceTypePrefix + 'T.svg');
+    }
+
+    .race-type--D-dark {
+      background-image: url($raceTypePrefix + 'D-dark.svg');
+    }
+
+    .race-type--G-dark {
+      background-image: url($raceTypePrefix + 'G-dark.svg');
+    }
+
+    .race-type--J-dark {
+      background-image: url($raceTypePrefix + 'J-dark.svg');
+    }
+
+    .race-type--T-dark {
+      background-image: url($raceTypePrefix + 'T-dark.svg');
+    }
+  }
+}

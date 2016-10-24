@@ -1,0 +1,16 @@
+.race-box-info {
+  line-height: 38px;
+  overflow: hidden;
+  margin: 0 8px;
+
+  @at-root {
+    .race-box-info__rate-type {
+      float: right;
+    }
+
+    .race-box-info__seperator {
+      color: #FFF;
+      margin: 0 5px;
+    }
+  }
+}
